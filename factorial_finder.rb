@@ -1,10 +1,10 @@
-puts "Give me the number you want to find the factorial of."
-x = gets.chomp.to_i
-def factorial(x)
-	if x == 0
-		0
-	else 
-		x * factorial(x-1)
-	end
+puts "Give me the number you want to find the factorial of: "
+initialValue = gets.chomp.to_i
+i = initialValue
+finalValue = 1
+while i >= 1
+	finalValue = finalValue * i
+	i--
 end
-puts factorial(x)
+puts "The result of the factorial is: #{finalValue}"
+response = gets.chomp
